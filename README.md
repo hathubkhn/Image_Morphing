@@ -10,7 +10,7 @@ We can use various algorithms to generate the intermediary images while morphing
 
 It is assumed that both the images M and N are of the same dimensions.
 
-\begin{aligned} I(x, y) = (1 - α)*M(x, y) + α*N(x, y) \end{aligned}
+`I(x, y) = (1 - α)*M(x, y) + α*N(x, y)`
 
 
 Where as
@@ -59,7 +59,7 @@ There are **3 steps** that are described below:
 
         Now, this algorithm selects a triangle T from the image M, its corresponding triangle V in the intermediate image I, and calculate the affine transform (described below) that converts the triangle T to V. It use the inbuilt function getAffineTransform, in OpenCV, to obtain the transformation matrix. Similarly, it calculates the transformation matrix of the corresponding triangle W in the image N to the triangle V. Now the transformations are applied so obtained to all the triangles of both the images M and N, to obtain warped images M’ and N’. Next, let's calculate the intermediate image I by using the same equation as the naïve algorithm:
         
-        $$\begin{aligned} I (x, y) = (1 - α) M’ (x, y) + α N’ (x, y) \end{aligned}$$
+        `I (x, y) = (1 - α) * M’ (x, y) + α * N’ (x, y)`
 
         A series of intermediate images based on different values of α are obtained. The ranging of α is between 0 and 1.
 
