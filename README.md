@@ -10,7 +10,7 @@ We can use various algorithms to generate the intermediary images while morphing
 
 It is assumed that both the images M and N are of the same dimensions.
 
-$$\begin{aligned} I(x, y) = (1 - α)*M(x, y) + α*N(x, y) \end{aligned}$$
+\begin{aligned} I(x, y) = (1 - α)*M(x, y) + α*N(x, y) \end{aligned}
 
 
 Where as
